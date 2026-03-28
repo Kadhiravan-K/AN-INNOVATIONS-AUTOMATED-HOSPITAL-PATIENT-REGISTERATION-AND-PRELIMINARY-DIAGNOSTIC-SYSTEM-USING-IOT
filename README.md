@@ -1,15 +1,6 @@
 # Automated Hospital Patient Registration System
 
-### Hindusthan College of Engineering and Technology
 
-**Department:** Electrical and Electronics Engineering  
-**Guide:** Dr. R. Rajeshkanna  
-**Team:**
-
-- AKASH KUMAR C M (720722105004)
-- JAYAPRASANTH S (720722105017)
-- KADHIRAVAN K (720722105025)
-- SANJAI S (720722105067)
 
 ---
 

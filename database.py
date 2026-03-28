@@ -1,9 +1,6 @@
 # ─────────────────────────────────────────────────────────────────
 # database.py
 # Project  : Automated Hospital Patient Registration System
-# College  : Hindusthan College of Engineering and Technology
-# Dept     : Electrical and Electronics Engineering
-# Guide    : Dr. R. Rajeshkanna
 # ─────────────────────────────────────────────────────────────────
 
 import sqlite3
