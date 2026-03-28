@@ -1,0 +1,20 @@
+# ─────────────────────────────────────────────────────────────────
+# requirements.txt
+# Project : Automated Hospital Patient Registration System
+# ─────────────────────────────────────────────────────────────────
+
+# ── LAPTOP / PC (Mock Mode) ───────────────────────────────────────
+# Only this is needed to run on your laptop:
+requests==2.31.0
+
+# ── RASPBERRY Pi (Real Hardware Mode) ────────────────────────────
+# Uncomment these when running on actual Raspberry Pi:
+# RPi.GPIO==0.7.1
+# smbus2==0.4.3
+# adafruit-circuitpython-bme280==2.6.26
+# adafruit-blinka==8.20.1
+
+# ── NOTE ─────────────────────────────────────────────────────────
+# tkinter  → built into Python (no install needed)
+# sqlite3  → built into Python (no install needed)
+# threading, datetime, random, hashlib → all built-in
