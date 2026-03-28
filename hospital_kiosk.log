@@ -1,0 +1,158 @@
+2026-03-28 15:29:35  [INFO   ]  database              Database initialised successfully.
+2026-03-28 15:29:35  [INFO   ]  controller.reg        New registration session started.
+2026-03-28 15:29:36  [INFO   ]  app                   Screen: welcome
+2026-03-28 15:33:53  [INFO   ]  app                   Application closed.
+2026-03-28 15:37:19  [INFO   ]  database              Database initialised successfully.
+2026-03-28 15:37:19  [INFO   ]  controller.reg        New registration session started.
+2026-03-28 15:37:19  [INFO   ]  app                   Application closed.
+2026-03-28 15:38:16  [INFO   ]  database              Database initialised successfully.
+2026-03-28 15:38:16  [INFO   ]  controller.reg        New registration session started.
+2026-03-28 15:38:17  [INFO   ]  app                   Screen: welcome
+2026-03-28 15:38:22  [INFO   ]  app                   Screen: aadhaar
+2026-03-28 15:39:58  [INFO   ]  controller.reg        New registration session started.
+2026-03-28 15:39:58  [INFO   ]  app                   Screen: welcome
+2026-03-28 15:40:02  [INFO   ]  app                   Screen: patient_info
+2026-03-28 15:42:08  [INFO   ]  app                   Screen: symptoms
+2026-03-28 15:42:25  [INFO   ]  app                   Screen: health
+2026-03-28 15:42:25  [INFO   ]  sensor.temp           MOCK Temperature: 37.2 °C
+2026-03-28 15:42:27  [INFO   ]  sensor.pulse          MOCK Heart Rate: 87 BPM
+2026-03-28 15:42:30  [INFO   ]  sensor.env            MOCK Environment: {'amb_temp': 27.4, 'humidity': 64.3, 'pressure': 1009.6}
+2026-03-28 15:42:31  [INFO   ]  services.dept         Allocated: General Medicine → General Practitioner
+2026-03-28 15:42:32  [INFO   ]  database              Patient saved. ID: 3
+2026-03-28 15:42:32  [INFO   ]  database              Health record saved for patient ID: 3
+2026-03-28 15:42:32  [INFO   ]  database              6 symptom(s) saved for patient ID: 3
+2026-03-28 15:42:32  [INFO   ]  database              Token saved: 20260328-5934 → General Medicine
+2026-03-28 15:42:32  [INFO   ]  controller.reg        Registration complete. Token: 20260328-5934
+2026-03-28 15:42:33  [INFO   ]  app                   Screen: token
+2026-03-28 15:43:31  [INFO   ]  app                   Application closed.
+2026-03-28 15:45:28  [INFO   ]  database              Database initialised successfully.
+2026-03-28 15:45:28  [INFO   ]  controller.reg        New registration session started.
+2026-03-28 15:45:28  [INFO   ]  app                   Screen: welcome
+2026-03-28 15:45:33  [INFO   ]  app                   Screen: patient_info
+2026-03-28 15:46:12  [INFO   ]  app                   Screen: symptoms
+2026-03-28 15:47:49  [INFO   ]  app                   Screen: health
+2026-03-28 15:47:49  [INFO   ]  sensor.temp           MOCK Temperature: 37.5 °C
+2026-03-28 15:47:51  [INFO   ]  sensor.pulse          MOCK Heart Rate: 62 BPM
+2026-03-28 15:47:54  [INFO   ]  sensor.env            MOCK Environment: {'amb_temp': 30.5, 'humidity': 71.9, 'pressure': 1013.9}
+2026-03-28 15:47:55  [INFO   ]  services.dept         Allocated: Cardiology → Specialist
+2026-03-28 15:47:57  [INFO   ]  database              Patient saved. ID: 4
+2026-03-28 15:47:57  [INFO   ]  database              Health record saved for patient ID: 4
+2026-03-28 15:47:57  [INFO   ]  database              1 symptom(s) saved for patient ID: 4
+2026-03-28 15:47:57  [INFO   ]  database              Token saved: 20260328-7064 → Cardiology
+2026-03-28 15:47:57  [INFO   ]  controller.reg        Registration complete. Token: 20260328-7064
+2026-03-28 15:47:57  [INFO   ]  app                   Screen: token
+2026-03-28 15:49:25  [INFO   ]  report                Token report printed for patient: fad
+2026-03-28 15:49:28  [INFO   ]  controller.reg        New registration session started.
+2026-03-28 15:49:28  [INFO   ]  app                   Screen: welcome
+2026-03-28 15:49:30  [INFO   ]  app                   Screen: aadhaar
+2026-03-28 15:49:43  [INFO   ]  auth                  ========================================
+2026-03-28 15:49:43  [INFO   ]  auth                    [MOCK OTP]  Your OTP is: 538037
+2026-03-28 15:49:43  [INFO   ]  auth                  ========================================
+2026-03-28 15:49:43  [INFO   ]  controller.auth       OTP sent for Aadhaar ending 0000
+2026-03-28 15:50:05  [INFO   ]  controller.reg        New registration session started.
+2026-03-28 15:50:05  [INFO   ]  app                   Screen: welcome
+2026-03-28 15:50:07  [INFO   ]  app                   Screen: patient_info
+2026-03-28 15:51:32  [INFO   ]  app                   Application closed.
+2026-03-28 15:52:29  [INFO   ]  database              Database initialised successfully.
+2026-03-28 15:52:29  [INFO   ]  controller.reg        New registration session started.
+2026-03-28 15:52:30  [INFO   ]  app                   Screen: welcome
+2026-03-28 15:52:32  [INFO   ]  app                   Screen: patient_info
+2026-03-28 15:57:27  [INFO   ]  app                   Screen: symptoms
+2026-03-28 16:00:27  [INFO   ]  app                   Screen: health
+2026-03-28 16:00:27  [INFO   ]  sensor.temp           MOCK Temperature: 39.4 °C
+2026-03-28 16:00:29  [INFO   ]  sensor.pulse          MOCK Heart Rate: 92 BPM
+2026-03-28 16:00:32  [INFO   ]  sensor.env            MOCK Environment: {'amb_temp': 31.1, 'humidity': 57.1, 'pressure': 1009.4}
+2026-03-28 16:00:33  [WARNING]  services.dept         EMERGENCY detected! Temp=39.4, HR=92
+2026-03-28 16:00:34  [INFO   ]  database              Patient saved. ID: 5
+2026-03-28 16:00:34  [INFO   ]  database              Health record saved for patient ID: 5
+2026-03-28 16:00:34  [INFO   ]  database              0 symptom(s) saved for patient ID: 5
+2026-03-28 16:00:34  [INFO   ]  database              Token saved: 20260328-8203 → Emergency
+2026-03-28 16:00:34  [INFO   ]  controller.reg        Registration complete. Token: 20260328-8203
+2026-03-28 16:00:35  [INFO   ]  app                   Screen: token
+2026-03-28 16:00:43  [INFO   ]  controller.reg        New registration session started.
+2026-03-28 16:00:44  [INFO   ]  app                   Screen: welcome
+2026-03-28 16:00:46  [INFO   ]  app                   Screen: aadhaar
+2026-03-28 16:00:54  [INFO   ]  app                   Application closed.
+2026-03-28 16:03:16  [INFO   ]  database              Database initialised successfully.
+2026-03-28 16:03:16  [INFO   ]  controller.reg        New registration session started.
+2026-03-28 16:03:17  [INFO   ]  app                   Screen: welcome
+2026-03-28 16:03:21  [INFO   ]  app                   Screen: patient_info
+2026-03-28 16:05:04  [INFO   ]  app                   Screen: symptoms
+2026-03-28 16:05:25  [INFO   ]  app                   Screen: health
+2026-03-28 16:05:25  [INFO   ]  sensor.temp           MOCK Temperature: 37.1 °C
+2026-03-28 16:05:27  [INFO   ]  sensor.pulse          MOCK Heart Rate: 62 BPM
+2026-03-28 16:05:30  [INFO   ]  sensor.env            MOCK Environment: {'amb_temp': 26.7, 'humidity': 73.9, 'pressure': 1011.7}
+2026-03-28 16:05:33  [INFO   ]  database              Patient saved. ID: 6
+2026-03-28 16:05:33  [INFO   ]  database              Health record saved for patient ID: 6
+2026-03-28 16:05:33  [INFO   ]  database              0 symptom(s) saved for patient ID: 6
+2026-03-28 16:05:33  [INFO   ]  database              Token saved: 20260328-1291 → General Medicine
+2026-03-28 16:05:33  [INFO   ]  controller.reg        Registration complete. Token: 20260328-1291
+2026-03-28 16:05:33  [INFO   ]  app                   Screen: token
+2026-03-28 16:06:09  [INFO   ]  controller.reg        New registration session started.
+2026-03-28 16:06:09  [INFO   ]  app                   Screen: welcome
+2026-03-28 16:06:12  [INFO   ]  app                   Screen: aadhaar
+2026-03-28 16:06:16  [INFO   ]  controller.reg        New registration session started.
+2026-03-28 16:06:16  [INFO   ]  app                   Screen: welcome
+2026-03-28 16:06:18  [INFO   ]  app                   Screen: patient_info
+2026-03-28 16:06:20  [INFO   ]  controller.reg        New registration session started.
+2026-03-28 16:06:20  [INFO   ]  app                   Screen: welcome
+2026-03-28 16:06:22  [INFO   ]  app                   Screen: patient_info
+2026-03-28 16:06:27  [INFO   ]  controller.reg        New registration session started.
+2026-03-28 16:06:27  [INFO   ]  app                   Screen: welcome
+2026-03-28 16:06:31  [INFO   ]  app                   Screen: patient_info
+2026-03-28 16:06:34  [INFO   ]  controller.reg        New registration session started.
+2026-03-28 16:06:34  [INFO   ]  app                   Screen: welcome
+2026-03-28 16:06:36  [INFO   ]  app                   Screen: patient_info
+2026-03-28 16:06:48  [INFO   ]  controller.reg        New registration session started.
+2026-03-28 16:06:48  [INFO   ]  app                   Screen: welcome
+2026-03-28 16:06:53  [INFO   ]  app                   Screen: patient_info
+2026-03-28 16:07:09  [INFO   ]  controller.reg        New registration session started.
+2026-03-28 16:07:09  [INFO   ]  app                   Screen: welcome
+2026-03-28 16:07:45  [INFO   ]  app                   Screen: patient_info
+2026-03-28 16:07:47  [INFO   ]  controller.reg        New registration session started.
+2026-03-28 16:07:48  [INFO   ]  app                   Screen: welcome
+2026-03-28 16:12:41  [INFO   ]  app                   Application closed.
+2026-03-28 16:16:11  [INFO   ]  database              Database initialised successfully.
+2026-03-28 16:16:11  [INFO   ]  controller.reg        New registration session started.
+2026-03-28 16:16:12  [INFO   ]  app                   Screen: welcome
+2026-03-28 16:16:15  [INFO   ]  app                   Screen: emergency
+2026-03-28 16:22:06  [INFO   ]  controller.reg        New registration session started.
+2026-03-28 16:28:34  [INFO   ]  controller.reg        New registration session started.
+2026-03-28 16:32:16  [INFO   ]  app                   Application closed.
+2026-03-28 16:33:21  [INFO   ]  database              Database initialised successfully.
+2026-03-28 16:33:21  [INFO   ]  controller.reg        New registration session started.
+2026-03-28 16:33:21  [INFO   ]  app                   Screen: welcome
+2026-03-28 16:33:28  [INFO   ]  app                   Screen: emergency
+2026-03-28 16:35:36  [INFO   ]  controller.reg        New registration session started.
+2026-03-28 16:35:36  [INFO   ]  app                   Screen: welcome
+2026-03-28 16:35:38  [INFO   ]  app                   Screen: patient_info
+2026-03-28 16:35:45  [INFO   ]  controller.reg        New registration session started.
+2026-03-28 16:35:45  [INFO   ]  app                   Screen: welcome
+2026-03-28 16:35:48  [INFO   ]  app                   Screen: emergency
+2026-03-28 16:35:50  [INFO   ]  controller.reg        New registration session started.
+2026-03-28 16:35:50  [INFO   ]  app                   Screen: welcome
+2026-03-28 16:35:51  [INFO   ]  app                   Screen: patient_info
+2026-03-28 16:35:56  [INFO   ]  controller.reg        New registration session started.
+2026-03-28 16:35:56  [INFO   ]  app                   Screen: welcome
+2026-03-28 16:38:30  [INFO   ]  database              Database initialised successfully.
+2026-03-28 16:38:30  [INFO   ]  controller.reg        New registration session started.
+2026-03-28 16:38:31  [INFO   ]  app                   Screen: welcome
+2026-03-28 16:38:34  [INFO   ]  app                   Screen: aadhaar
+2026-03-28 16:41:19  [INFO   ]  auth                  ========================================
+2026-03-28 16:41:19  [INFO   ]  auth                    [MOCK OTP]  Your OTP is: 697357
+2026-03-28 16:41:19  [INFO   ]  auth                  ========================================
+2026-03-28 16:41:19  [INFO   ]  controller.auth       OTP sent for Aadhaar ending 4544
+2026-03-28 16:43:17  [INFO   ]  app                   Application closed.
+2026-03-28 16:52:37  [INFO   ]  controller.reg        New registration session started.
+2026-03-28 16:52:38  [INFO   ]  app                   Screen: welcome
+2026-03-28 16:52:51  [INFO   ]  app                   Screen: patient_info
+2026-03-28 16:52:55  [INFO   ]  controller.reg        New registration session started.
+2026-03-28 16:52:56  [INFO   ]  app                   Screen: welcome
+2026-03-28 16:52:57  [INFO   ]  app                   Screen: aadhaar
+2026-03-28 16:53:00  [INFO   ]  controller.reg        New registration session started.
+2026-03-28 16:53:01  [INFO   ]  app                   Screen: welcome
+2026-03-28 16:53:03  [INFO   ]  app                   Screen: patient_info
+2026-03-28 16:53:30  [INFO   ]  app                   Screen: symptoms
+2026-03-28 16:54:53  [INFO   ]  app                   Screen: patient_info
+2026-03-28 16:54:55  [INFO   ]  controller.reg        New registration session started.
+2026-03-28 16:54:55  [INFO   ]  app                   Screen: welcome

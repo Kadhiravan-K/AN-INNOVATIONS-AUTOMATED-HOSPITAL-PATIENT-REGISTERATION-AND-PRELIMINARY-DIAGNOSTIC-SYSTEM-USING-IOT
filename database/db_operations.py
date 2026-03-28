@@ -1,103 +1,14 @@
 # ─────────────────────────────────────────────────────────────────
-# database.py
-# Project  : Automated Hospital Patient Registration System
-# College  : Hindusthan College of Engineering and Technology
-# Dept     : Electrical and Electronics Engineering
-# Guide    : Dr. R. Rajeshkanna
+# database/db_operations.py — All CRUD operations
 # ─────────────────────────────────────────────────────────────────
 
 import sqlite3
 import hashlib
-import datetime
-import random
 from config import DB_PATH
+from utils.logger import get_logger
+from utils.token_generator import generate_token_number
 
-
-# ─────────────────────────────────────────────────────────────────
-# DATABASE SETUP – Create tables if not exist
-# ─────────────────────────────────────────────────────────────────
-
-def init_database():
-    """
-    Creates all required tables in the SQLite database.
-    Safe to call multiple times – uses CREATE IF NOT EXISTS.
-    Call this once when the app starts.
-    """
-    conn = sqlite3.connect(DB_PATH)
-    c    = conn.cursor()
-
-    # ── Table 1: patients ─────────────────────────────────────────
-    c.execute('''
-        CREATE TABLE IF NOT EXISTS patients (
-            patient_id        INTEGER PRIMARY KEY AUTOINCREMENT,
-            name              TEXT,
-            age               INTEGER,
-            gender            TEXT,
-            aadhaar_hash      TEXT,
-            registration_type TEXT,
-            created_at        TEXT DEFAULT CURRENT_TIMESTAMP
-        )
-    ''')
-
-    # ── Table 2: health_records ───────────────────────────────────
-    c.execute('''
-        CREATE TABLE IF NOT EXISTS health_records (
-            record_id    INTEGER PRIMARY KEY AUTOINCREMENT,
-            patient_id   INTEGER,
-            temperature  REAL,
-            heart_rate   INTEGER,
-            amb_temp     REAL,
-            humidity     REAL,
-            pressure     REAL,
-            recorded_at  TEXT DEFAULT CURRENT_TIMESTAMP,
-            FOREIGN KEY (patient_id) REFERENCES patients(patient_id)
-        )
-    ''')
-
-    # ── Table 3: symptoms ─────────────────────────────────────────
-    c.execute('''
-        CREATE TABLE IF NOT EXISTS symptoms (
-            symptom_id   INTEGER PRIMARY KEY AUTOINCREMENT,
-            patient_id   INTEGER,
-            symptom_code TEXT,
-            recorded_at  TEXT DEFAULT CURRENT_TIMESTAMP,
-            FOREIGN KEY (patient_id) REFERENCES patients(patient_id)
-        )
-    ''')
-
-    # ── Table 4: tokens ───────────────────────────────────────────
-    c.execute('''
-        CREATE TABLE IF NOT EXISTS tokens (
-            token_id     INTEGER PRIMARY KEY AUTOINCREMENT,
-            patient_id   INTEGER,
-            token_number TEXT,
-            department   TEXT,
-            doctor_type  TEXT,
-            is_emergency INTEGER DEFAULT 0,
-            status       TEXT    DEFAULT "waiting",
-            issued_at    TEXT    DEFAULT CURRENT_TIMESTAMP,
-            FOREIGN KEY (patient_id) REFERENCES patients(patient_id)
-        )
-    ''')
-
-    conn.commit()
-    conn.close()
-    print("[DB] Database initialised successfully.")
-
-
-# ─────────────────────────────────────────────────────────────────
-# TOKEN GENERATOR
-# ─────────────────────────────────────────────────────────────────
-
-def generate_token_number():
-    """
-    Generates a unique token number.
-    Format: YYYYMMDD-XXXX  (e.g. 20260328-4721)
-    Returns: str
-    """
-    date_part   = datetime.datetime.now().strftime("%Y%m%d")
-    random_part = random.randint(1000, 9999)
-    return f"{date_part}-{random_part}"
+log = get_logger("database")
 
 
 # ─────────────────────────────────────────────────────────────────
@@ -106,12 +17,9 @@ def generate_token_number():
 
 def save_patient(name, age, gender, aadhaar_number, registration_type):
     """
-    Saves a new patient record to the database.
-    Aadhaar number is stored as SHA-256 hash for privacy.
-
-    Returns: int – newly created patient_id
+    Saves a new patient record. Aadhaar is stored as SHA-256 hash.
+    Returns: int — newly created patient_id
     """
-    # Hash Aadhaar number – never store plain text
     aadhaar_hash = (
         hashlib.sha256(aadhaar_number.encode()).hexdigest()
         if aadhaar_number
@@ -129,7 +37,7 @@ def save_patient(name, age, gender, aadhaar_number, registration_type):
     conn.commit()
     conn.close()
 
-    print(f"[DB] Patient saved. ID: {patient_id}")
+    log.info("Patient saved. ID: %d", patient_id)
     return patient_id
 
 
@@ -138,15 +46,7 @@ def save_patient(name, age, gender, aadhaar_number, registration_type):
 # ─────────────────────────────────────────────────────────────────
 
 def save_health_record(patient_id, temperature, heart_rate, env):
-    """
-    Saves sensor readings linked to a patient.
-
-    Parameters:
-        patient_id  : int
-        temperature : float  – body temperature °C
-        heart_rate  : int    – BPM
-        env         : dict   – {amb_temp, humidity, pressure}
-    """
+    """Saves sensor readings linked to a patient."""
     conn = sqlite3.connect(DB_PATH)
     c    = conn.cursor()
     c.execute('''
@@ -163,7 +63,7 @@ def save_health_record(patient_id, temperature, heart_rate, env):
     ))
     conn.commit()
     conn.close()
-    print(f"[DB] Health record saved for patient ID: {patient_id}")
+    log.info("Health record saved for patient ID: %d", patient_id)
 
 
 # ─────────────────────────────────────────────────────────────────
@@ -171,13 +71,7 @@ def save_health_record(patient_id, temperature, heart_rate, env):
 # ─────────────────────────────────────────────────────────────────
 
 def save_symptoms(patient_id, symptoms):
-    """
-    Saves all selected symptom codes for a patient.
-
-    Parameters:
-        patient_id : int
-        symptoms   : list of str  – e.g. ['fever', 'headache']
-    """
+    """Saves all selected symptom codes for a patient."""
     conn = sqlite3.connect(DB_PATH)
     c    = conn.cursor()
     for symptom in symptoms:
@@ -187,7 +81,7 @@ def save_symptoms(patient_id, symptoms):
         ''', (patient_id, symptom))
     conn.commit()
     conn.close()
-    print(f"[DB] {len(symptoms)} symptom(s) saved for patient ID: {patient_id}")
+    log.info("%d symptom(s) saved for patient ID: %d", len(symptoms), patient_id)
 
 
 # ─────────────────────────────────────────────────────────────────
@@ -195,11 +89,7 @@ def save_symptoms(patient_id, symptoms):
 # ─────────────────────────────────────────────────────────────────
 
 def save_token(patient_id, department, doctor_type, is_emergency):
-    """
-    Generates and saves a registration token for a patient.
-
-    Returns: str – the generated token number
-    """
+    """Generates and saves a registration token. Returns: str — token number."""
     token_number = generate_token_number()
 
     conn = sqlite3.connect(DB_PATH)
@@ -217,28 +107,19 @@ def save_token(patient_id, department, doctor_type, is_emergency):
     ))
     conn.commit()
     conn.close()
-    print(f"[DB] Token saved: {token_number} → {department}")
+    log.info("Token saved: %s → %s", token_number, department)
     return token_number
 
 
 # ─────────────────────────────────────────────────────────────────
-# SAVE COMPLETE REGISTRATION (All-in-one helper)
+# SAVE COMPLETE REGISTRATION (All-in-one)
 # ─────────────────────────────────────────────────────────────────
 
 def save_full_registration(session):
     """
-    Master function – saves everything in one call.
-
-    Parameter:
-        session : dict with keys:
-            name, age, gender, aadhaar_number,
-            registration_type, symptoms,
-            temperature, heart_rate, env,
-            department, doctor_type, is_emergency
-
-    Returns: dict – { patient_id, token_number }
+    Master function — saves everything in one call.
+    Returns: dict — { patient_id, token_number }
     """
-    # 1. Save patient
     patient_id = save_patient(
         name              = session.get("name", "Unknown"),
         age               = session.get("age", 0),
@@ -247,7 +128,6 @@ def save_full_registration(session):
         registration_type = session.get("registration_type", "Temporary"),
     )
 
-    # 2. Save health record
     save_health_record(
         patient_id  = patient_id,
         temperature = session.get("temperature"),
@@ -255,13 +135,11 @@ def save_full_registration(session):
         env         = session.get("env", {}),
     )
 
-    # 3. Save symptoms
     save_symptoms(
         patient_id = patient_id,
         symptoms   = session.get("symptoms", []),
     )
 
-    # 4. Save token
     token_number = save_token(
         patient_id   = patient_id,
         department   = session.get("department", "General Medicine"),
@@ -270,31 +148,26 @@ def save_full_registration(session):
     )
 
     return {
-        "patient_id"   : patient_id,
-        "token_number" : token_number,
+        "patient_id"  : patient_id,
+        "token_number": token_number,
     }
 
 
 # ─────────────────────────────────────────────────────────────────
-# FETCH PATIENT SUMMARY (for display on token screen)
+# FETCH PATIENT SUMMARY
 # ─────────────────────────────────────────────────────────────────
 
 def get_patient_summary(patient_id):
-    """
-    Fetches complete patient details for the token summary screen.
-    Returns: dict with all patient info
-    """
+    """Fetches complete patient details for the token summary screen."""
     conn = sqlite3.connect(DB_PATH)
     c    = conn.cursor()
 
-    # Patient info
     c.execute('''
         SELECT name, age, gender, registration_type, created_at
         FROM patients WHERE patient_id = ?
     ''', (patient_id,))
     patient = c.fetchone()
 
-    # Health record
     c.execute('''
         SELECT temperature, heart_rate, amb_temp, humidity, pressure
         FROM health_records WHERE patient_id = ?
@@ -302,7 +175,6 @@ def get_patient_summary(patient_id):
     ''', (patient_id,))
     health = c.fetchone()
 
-    # Token
     c.execute('''
         SELECT token_number, department, doctor_type, is_emergency, issued_at
         FROM tokens WHERE patient_id = ?
