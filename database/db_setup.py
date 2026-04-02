@@ -35,6 +35,7 @@ def init_database():
             patient_id   INTEGER,
             temperature  REAL,
             heart_rate   INTEGER,
+            spo2         REAL,
             amb_temp     REAL,
             humidity     REAL,
             pressure     REAL,
@@ -60,6 +61,7 @@ def init_database():
             token_number TEXT,
             department   TEXT,
             doctor_type  TEXT,
+            severity     TEXT,
             is_emergency INTEGER DEFAULT 0,
             status       TEXT    DEFAULT "waiting",
             issued_at    TEXT    DEFAULT CURRENT_TIMESTAMP,
@@ -67,6 +69,29 @@ def init_database():
         )
     ''')
 
+    c.execute('''
+        CREATE TABLE IF NOT EXISTS feedback (
+            feedback_id INTEGER PRIMARY KEY AUTOINCREMENT,
+            rating      INTEGER,
+            comments    TEXT,
+            created_at  TEXT DEFAULT CURRENT_TIMESTAMP
+        )
+    ''')
+
+    # ── Migrations (Safe column additions) ────────────────
+    def add_col_if_missing(table, col, def_val=""):
+        try:
+            c.execute(f"ALTER TABLE {table} ADD COLUMN {col}")
+            log.info(f"Migration: Added column {col} to {table}")
+        except sqlite3.OperationalError:
+            pass # Already exists
+
+    add_col_if_missing("patients", "allergies", "''")
+    add_col_if_missing("patients", "medical_history", "''")
+    add_col_if_missing("patients", "last_visit_id", "0")
+    add_col_if_missing("tokens", "severity", "'Normal'")
+    add_col_if_missing("health_records", "spo2", "0.0")
+
     conn.commit()
     conn.close()
-    log.info("Database initialised successfully.")
+    log.info("Database initialised and migrated successfully.")

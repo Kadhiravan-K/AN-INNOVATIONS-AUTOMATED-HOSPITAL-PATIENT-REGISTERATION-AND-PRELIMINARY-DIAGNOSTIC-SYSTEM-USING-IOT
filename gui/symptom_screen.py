@@ -17,14 +17,14 @@ class SymptomScreen(BaseScreen):
 
     def show(self):
         self.clear()
-        self.make_header("Select Symptoms")
-        self.make_footer("Select all that apply — you can select multiple")
+        self.make_header(self.translate("symptoms_title"))
+        self.make_footer(self.translate("btn_select_symptoms_sub", "Select all that apply — you can select multiple"))
 
         content = ctk.CTkFrame(self.root, fg_color=COLOR_SURFACE, corner_radius=0)
         content.pack(fill="both", expand=True)
 
         ctk.CTkLabel(
-            content, text="Please select all applicable symptoms",
+            content, text=self.translate("btn_select_symptoms_desc", "Please select all applicable symptoms"),
             font=FONT_HEADING, text_color=COLOR_TEXT,
         ).pack(pady=(8, 5))
 
@@ -77,13 +77,13 @@ class SymptomScreen(BaseScreen):
         btn_frame.pack(pady=8)
 
         self.make_button(
-            btn_frame, text="←  Back",
+            btn_frame, text=self.translate("btn_back"),
             command=lambda: self.app.show_screen("patient_info"),
             color=COLOR_TEXT_LIGHT, width=140,
         ).grid(row=0, column=0, padx=8)
 
         self.make_button(
-            btn_frame, text="Next – Health Check  →",
+            btn_frame, text=self.translate("btn_next"),
             command=self._save_and_next,
             color=COLOR_ACCENT, width=200,
         ).grid(row=0, column=1, padx=8)

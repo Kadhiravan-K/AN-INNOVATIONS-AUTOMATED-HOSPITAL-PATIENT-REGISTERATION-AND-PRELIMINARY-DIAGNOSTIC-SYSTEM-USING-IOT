@@ -25,19 +25,20 @@ WINDOW_WIDTH  = 800
 WINDOW_HEIGHT = 480
 FULLSCREEN    = False  # Set True on actual Raspberry Pi kiosk
 
-# ── MODERN COLOUR PALETTE ────────────────────────────────────────
-COLOR_PRIMARY    = "#0D1B2A"   # Deep navy      – headers, accents
-COLOR_SECONDARY  = "#1B3A4B"   # Dark steel     – secondary bg
-COLOR_ACCENT     = "#1B998B"   # Teal           – buttons, highlights
-COLOR_SURFACE    = "#F8F9FA"   # Warm white     – main background
-COLOR_CARD       = "#FFFFFF"   # Pure white     – cards
-COLOR_TEXT       = "#212529"   # Near black     – primary text
-COLOR_TEXT_LIGHT = "#6C757D"   # Grey           – secondary text
-COLOR_SUCCESS    = "#2DC653"   # Green          – success states
-COLOR_WARNING    = "#F77F00"   # Amber          – warning states
-COLOR_DANGER     = "#D62828"   # Red            – emergency / error
-COLOR_INFO       = "#457B9D"   # Steel blue     – informational
-COLOR_BORDER     = "#DEE2E6"   # Light grey     – borders, dividers
+# ── PREMIUM COLOUR PALETTE (Indigo & Emerald) ───────────────────
+COLOR_PRIMARY    = "#2B2D42"   # Deep anthracite – headers, deep UI
+COLOR_SECONDARY  = "#3D405B"   # Muted indigo – secondary elements
+COLOR_ACCENT     = "#06D6A0"   # Emerald – primary buttons, success
+COLOR_SURFACE    = "#F1F5F9"   # Slate 50 – main background
+COLOR_CARD       = "#FFFFFF"   # Pure white – cards
+COLOR_TEXT       = "#1E293B"   # Slate 800 – primary text
+COLOR_TEXT_LIGHT = "#64748B"   # Slate 500 – secondary text
+COLOR_SUCCESS    = "#2ECC71"   # Emerald – success states
+COLOR_WARNING    = "#F1C40F"   # Sunflower – warning states
+COLOR_DANGER     = "#EA4335"   # Google red – emergency / error
+COLOR_INFO       = "#3B82F6"   # Sky blue – informational
+COLOR_BORDER     = "#E2E8F0"   # Slate 200 – borders, dividers
+COLOR_GLASS      = "rgba(255, 255, 255, 0.7)" # Glassmorphism effect overlay
 
 # Legacy aliases (for backward compatibility during migration)
 COLOR_DARK    = COLOR_PRIMARY
@@ -89,6 +90,7 @@ SYMPTOM_DEPT_MAP = {
     "urinary_problem"     : "Urology",
     "dental_pain"         : "Dental",
     "anxiety_depression"  : "Psychiatry",
+    "other"               : "General Medicine",
 }
 
 # ── SYMPTOM DISPLAY LABELS ───────────────────────────────────────
@@ -105,11 +107,12 @@ SYMPTOM_LABELS = {
     "urinary_problem"     : "💧  Urinary Problem",
     "dental_pain"         : "🦷  Dental Pain",
     "anxiety_depression"  : "🧠  Anxiety / Depression",
+    "other"               : "❓  Other / Unknown",
 }
 
 # ── SYMPTOM CATEGORIES (for grouped display) ─────────────────────
 SYMPTOM_CATEGORIES = {
-    "General": ["fever", "headache"],
+    "General": ["fever", "headache", "other"],
     "Heart & Lungs": ["chest_pain", "shortness_of_breath"],
     "Digestive": ["abdominal_pain"],
     "Bones & Joints": ["joint_pain"],
@@ -120,3 +123,7 @@ SYMPTOM_CATEGORIES = {
 # ── LOGGING ──────────────────────────────────────────────────────
 LOG_FILE   = "hospital_kiosk.log"
 LOG_LEVEL  = "INFO"
+
+# ── SECURITY ─────────────────────────────────────────────────────
+ADMIN_PASSWORD = "admin"  # Change this for production!
+SECRET_SALT    = "hospital_kiosk_2024" # For extra hashing security

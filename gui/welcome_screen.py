@@ -6,9 +6,11 @@ import customtkinter as ctk
 from gui.base_screen import BaseScreen
 from config import (
     COLOR_PRIMARY, COLOR_ACCENT, COLOR_SURFACE, COLOR_CARD,
-    COLOR_TEXT, COLOR_TEXT_LIGHT, COLOR_DANGER, FONT_HEADING, FONT_NORMAL, FONT_SMALL
+    COLOR_TEXT, COLOR_TEXT_LIGHT, COLOR_DANGER, FONT_HEADING, FONT_NORMAL, FONT_SMALL,
+    COLOR_BORDER
 )
 from sensors import beep
+from services.i18n import i18n
 
 
 class WelcomeScreen(BaseScreen):
@@ -16,12 +18,27 @@ class WelcomeScreen(BaseScreen):
 
     def show(self):
         self.clear()
-        self.make_header("Welcome to Patient Registration")
+        self.make_header(self.translate("welcome_title"))
         self.make_footer()
 
         # ── Main content area ────────────────────────────────────
         content = ctk.CTkFrame(self.root, fg_color=COLOR_SURFACE, corner_radius=0)
         content.pack(fill="both", expand=True)
+
+        # ── Language Selector (Top Right) ────────────────────────
+        lang_frame = ctk.CTkFrame(content, fg_color="transparent")
+        lang_frame.place(relx=0.98, rely=0.02, anchor="ne")
+
+        for code, name in i18n.LANGUAGES.items():
+            btn = ctk.CTkButton(
+                lang_frame, text=name, width=60, height=25,
+                fg_color=COLOR_CARD if i18n.current_lang == code else "transparent",
+                text_color=COLOR_TEXT, border_width=1 if i18n.current_lang == code else 0,
+                border_color=COLOR_BORDER,
+                command=lambda c=code: self._change_lang(c),
+                font=FONT_SMALL
+            )
+            btn.pack(side="left", padx=2)
 
         # Welcome icon
         ctk.CTkLabel(
@@ -29,11 +46,11 @@ class WelcomeScreen(BaseScreen):
             text="🏥",
             font=("Segoe UI", 48),
             text_color=COLOR_TEXT
-        ).pack(pady=(20, 5))
+        ).pack(pady=(40, 5))
 
         ctk.CTkLabel(
             content,
-            text="Please select your registration type",
+            text=self.translate("welcome_subtitle"),
             font=FONT_HEADING,
             text_color=COLOR_TEXT,
         ).pack(pady=(0, 20))
@@ -49,20 +66,20 @@ class WelcomeScreen(BaseScreen):
         ctk.CTkLabel(
             perm_card, text="🔒", font=("Segoe UI", 32),
             text_color=COLOR_PRIMARY
-        ).pack(pady=(5, 0))
+        ).pack(pady=(15, 0))
 
         ctk.CTkLabel(
             perm_card, text="Permanent",
             font=("Segoe UI", 16, "bold"),
             text_color=COLOR_PRIMARY,
-        ).pack(pady=(5, 2))
+        ).pack(pady=(5, 10))
 
         self.make_button(
             perm_card, text="Select",
             command=self._go_permanent,
             color=COLOR_PRIMARY, width=120, height=35,
             font=FONT_NORMAL,
-        ).pack(pady=(5, 10))
+        ).pack(pady=(5, 20))
 
         # ── Temporary Registration Card ──────────────────────────
         _, temp_card = self.make_card(cards_frame, padx=10, pady=10)
@@ -71,20 +88,20 @@ class WelcomeScreen(BaseScreen):
         ctk.CTkLabel(
             temp_card, text="⏱", font=("Segoe UI", 32),
             text_color=COLOR_ACCENT
-        ).pack(pady=(5, 0))
+        ).pack(pady=(15, 0))
 
         ctk.CTkLabel(
             temp_card, text="Temporary",
             font=("Segoe UI", 16, "bold"),
             text_color=COLOR_ACCENT,
-        ).pack(pady=(5, 2))
+        ).pack(pady=(5, 10))
 
         self.make_button(
             temp_card, text="Select",
             command=self._go_temporary,
             color=COLOR_ACCENT, width=120, height=35,
             font=FONT_NORMAL,
-        ).pack(pady=(5, 10))
+        ).pack(pady=(5, 20))
 
         # ── Emergency Registration Card ──────────────────────────
         _, emg_card = self.make_card(cards_frame, padx=10, pady=10)
@@ -93,20 +110,25 @@ class WelcomeScreen(BaseScreen):
         ctk.CTkLabel(
             emg_card, text="🚨", font=("Segoe UI", 32),
             text_color=COLOR_DANGER
-        ).pack(pady=(5, 0))
+        ).pack(pady=(15, 0))
 
         ctk.CTkLabel(
             emg_card, text="Emergency",
             font=("Segoe UI", 16, "bold"),
             text_color=COLOR_DANGER,
-        ).pack(pady=(5, 2))
+        ).pack(pady=(5, 10))
 
         self.make_button(
             emg_card, text="Select",
             command=self._go_emergency,
             color=COLOR_DANGER, width=120, height=35,
             font=FONT_NORMAL,
-        ).pack(pady=(5, 10))
+        ).pack(pady=(5, 20))
+
+    def _change_lang(self, code):
+        beep(1)
+        i18n.set_language(code)
+        self.show()
 
 
     # ── Actions ──────────────────────────────────────────────────

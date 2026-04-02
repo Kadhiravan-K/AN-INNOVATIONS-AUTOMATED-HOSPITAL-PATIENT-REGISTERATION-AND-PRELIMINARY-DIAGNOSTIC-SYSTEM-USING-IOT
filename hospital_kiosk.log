@@ -156,3 +156,424 @@
 2026-03-28 16:54:53  [INFO   ]  app                   Screen: patient_info
 2026-03-28 16:54:55  [INFO   ]  controller.reg        New registration session started.
 2026-03-28 16:54:55  [INFO   ]  app                   Screen: welcome
+2026-03-28 17:56:33  [INFO   ]  database              Database initialised successfully.
+2026-03-28 17:56:33  [INFO   ]  controller.reg        New registration session started.
+2026-03-28 17:56:34  [INFO   ]  app                   Screen: welcome
+2026-04-02 09:47:38  [INFO   ]  database              Database initialised successfully.
+2026-04-02 09:47:38  [INFO   ]  services.admin        Admin Dashboard starting at http://localhost:8080
+2026-04-02 09:47:38  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 09:47:38  [INFO   ]  app                   Application closed.
+2026-04-02 09:48:03  [INFO   ]  database              Database initialised successfully.
+2026-04-02 09:48:03  [INFO   ]  services.admin        Admin Dashboard starting at http://localhost:8080
+2026-04-02 09:48:03  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 09:48:05  [INFO   ]  app                   Screen: welcome
+2026-04-02 09:48:16  [INFO   ]  app                   Screen: patient_info
+2026-04-02 09:52:01  [INFO   ]  database              Database initialised successfully.
+2026-04-02 09:52:01  [INFO   ]  services.admin        Admin Dashboard starting at http://localhost:8080
+2026-04-02 09:52:01  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 09:52:02  [INFO   ]  app                   Screen: welcome
+2026-04-02 09:52:08  [INFO   ]  app                   Application closed.
+2026-04-02 09:52:10  [INFO   ]  app                   Screen: patient_info
+2026-04-02 09:53:44  [INFO   ]  app                   Application closed.
+2026-04-02 09:53:48  [INFO   ]  database              Database initialised successfully.
+2026-04-02 09:53:48  [INFO   ]  services.admin        Admin Dashboard starting at http://localhost:8080
+2026-04-02 09:53:48  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 09:53:49  [INFO   ]  app                   Screen: welcome
+2026-04-02 09:53:51  [INFO   ]  app                   Screen: patient_info
+2026-04-02 09:56:29  [WARNING]  app                   Session timeout reached. Resetting to Welcome.
+2026-04-02 09:56:29  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 09:56:30  [INFO   ]  app                   Screen: welcome
+2026-04-02 10:29:05  [INFO   ]  app                   Application closed.
+2026-04-02 10:29:10  [INFO   ]  database              Database initialised successfully.
+2026-04-02 10:29:13  [INFO   ]  services.admin        Admin Dashboard starting at http://localhost:8080
+2026-04-02 10:29:13  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 10:29:14  [INFO   ]  app                   Screen: welcome
+2026-04-02 10:29:24  [INFO   ]  app                   Screen: patient_info
+2026-04-02 10:31:40  [WARNING]  app                   Session timeout reached. Resetting to Welcome.
+2026-04-02 10:31:40  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 10:31:40  [INFO   ]  app                   Screen: welcome
+2026-04-02 10:31:41  [INFO   ]  app                   Application closed.
+2026-04-02 10:31:46  [INFO   ]  database              Database initialised successfully.
+2026-04-02 10:31:46  [INFO   ]  services.admin        Admin Dashboard starting at http://localhost:8080
+2026-04-02 10:31:46  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 10:31:48  [INFO   ]  app                   Screen: welcome
+2026-04-02 10:31:53  [INFO   ]  app                   Screen: patient_info
+2026-04-02 10:34:18  [WARNING]  app                   Session timeout reached. Resetting to Welcome.
+2026-04-02 10:34:18  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 10:34:18  [INFO   ]  app                   Screen: welcome
+2026-04-02 10:34:32  [INFO   ]  app                   Screen: patient_info
+2026-04-02 10:36:41  [WARNING]  app                   Session timeout reached. Resetting to Welcome.
+2026-04-02 10:36:41  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 10:36:42  [INFO   ]  app                   Screen: welcome
+2026-04-02 10:37:32  [INFO   ]  database              Database initialised successfully.
+2026-04-02 10:37:32  [INFO   ]  services.admin        Admin Dashboard starting at http://localhost:8080
+2026-04-02 10:37:32  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 10:37:33  [INFO   ]  app                   Screen: welcome
+2026-04-02 10:38:00  [INFO   ]  app                   Application closed.
+2026-04-02 10:38:06  [INFO   ]  app                   Screen: aadhaar
+2026-04-02 10:38:14  [INFO   ]  auth                  ========================================
+2026-04-02 10:38:14  [INFO   ]  auth                    [MOCK OTP]  Your OTP is: 160479
+2026-04-02 10:38:14  [INFO   ]  auth                  ========================================
+2026-04-02 10:38:14  [INFO   ]  controller.auth       OTP sent for Aadhaar ending 5298
+2026-04-02 10:38:28  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 10:38:28  [INFO   ]  app                   Screen: welcome
+2026-04-02 10:38:32  [INFO   ]  app                   Screen: patient_info
+2026-04-02 10:42:43  [WARNING]  app                   Session timeout reached. Resetting to Welcome.
+2026-04-02 10:42:43  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 10:42:44  [INFO   ]  app                   Screen: welcome
+2026-04-02 10:49:16  [INFO   ]  database              Database initialised successfully.
+2026-04-02 10:49:16  [INFO   ]  services.admin        Admin Dashboard starting at http://localhost:8080
+2026-04-02 10:49:16  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 10:49:17  [INFO   ]  app                   Screen: welcome
+2026-04-02 10:49:45  [INFO   ]  database              Database initialised successfully.
+2026-04-02 10:49:45  [INFO   ]  services.admin        Admin Dashboard starting at http://localhost:8080
+2026-04-02 10:49:45  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 10:49:46  [INFO   ]  app                   Screen: welcome
+2026-04-02 10:51:09  [INFO   ]  app                   Application closed.
+2026-04-02 10:51:11  [INFO   ]  app                   Application closed.
+2026-04-02 10:52:18  [INFO   ]  database              Database initialised successfully.
+2026-04-02 10:52:18  [INFO   ]  services.admin        Admin Dashboard starting at http://localhost:8080
+2026-04-02 10:52:18  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 10:52:19  [INFO   ]  app                   Screen: welcome
+2026-04-02 10:52:22  [INFO   ]  app                   Screen: patient_info
+2026-04-02 10:52:48  [INFO   ]  database              Database initialised successfully.
+2026-04-02 10:52:49  [INFO   ]  services.admin        Admin Dashboard starting at http://localhost:8080
+2026-04-02 10:52:49  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 10:52:49  [INFO   ]  app                   Screen: welcome
+2026-04-02 10:52:59  [INFO   ]  app                   Screen: patient_info
+2026-04-02 10:53:15  [WARNING]  app                   Session timeout reached. Resetting to Welcome.
+2026-04-02 10:53:15  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 10:53:15  [INFO   ]  app                   Screen: welcome
+2026-04-02 10:54:24  [WARNING]  app                   Session timeout reached. Resetting to Welcome.
+2026-04-02 10:54:24  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 10:54:24  [INFO   ]  app                   Screen: welcome
+2026-04-02 10:55:34  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 10:55:34  [INFO   ]  app                   Screen: welcome
+2026-04-02 10:57:10  [INFO   ]  app                   Application closed.
+2026-04-02 10:57:12  [INFO   ]  app                   Application closed.
+2026-04-02 10:57:15  [INFO   ]  app                   Screen: patient_info
+2026-04-02 10:57:16  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 10:57:17  [INFO   ]  app                   Screen: welcome
+2026-04-02 10:57:18  [INFO   ]  services.i18n         Language changed to: हिन्दी
+2026-04-02 10:57:21  [INFO   ]  services.i18n         Language changed to: தமிழ்
+2026-04-02 10:57:25  [INFO   ]  app                   Screen: patient_info
+2026-04-02 10:57:31  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 10:57:31  [INFO   ]  app                   Screen: welcome
+2026-04-02 10:57:35  [INFO   ]  app                   Screen: patient_info
+2026-04-02 10:59:38  [WARNING]  app                   Session timeout reached. Resetting to Welcome.
+2026-04-02 10:59:38  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 10:59:41  [INFO   ]  app                   Screen: welcome
+2026-04-02 11:24:10  [INFO   ]  app                   Screen: patient_info
+2026-04-02 11:26:10  [WARNING]  app                   Session timeout reached. Resetting to Welcome.
+2026-04-02 11:26:10  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 11:26:10  [INFO   ]  app                   Screen: welcome
+2026-04-02 11:26:21  [INFO   ]  app                   Screen: patient_info
+2026-04-02 11:28:03  [INFO   ]  app                   Application closed.
+2026-04-02 11:28:07  [INFO   ]  database              Database initialised successfully.
+2026-04-02 11:28:07  [INFO   ]  services.admin        Admin Dashboard starting at http://localhost:8080
+2026-04-02 11:28:07  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 11:28:08  [INFO   ]  app                   Screen: welcome
+2026-04-02 11:28:11  [INFO   ]  app                   Screen: patient_info
+2026-04-02 11:28:34  [INFO   ]  app                   Screen: symptoms
+2026-04-02 11:29:01  [INFO   ]  app                   Screen: health
+2026-04-02 11:29:01  [INFO   ]  sensor.temp           MOCK Temperature: 36.1 °C
+2026-04-02 11:29:03  [INFO   ]  sensor.pulse          MOCK Heart Rate: 71 BPM
+2026-04-02 11:29:08  [INFO   ]  sensors.spo2          MOCK SpO2: 97%
+2026-04-02 11:29:08  [INFO   ]  sensor.env            MOCK Environment: {'amb_temp': 31.8, 'humidity': 70.2, 'pressure': 1005.0}
+2026-04-02 11:29:09  [INFO   ]  services.ai           AI Inference: General Medicine (Normal)
+2026-04-02 11:29:10  [INFO   ]  database              Patient saved. ID: 7
+2026-04-02 11:29:10  [INFO   ]  database              Health record saved for patient ID: 7
+2026-04-02 11:29:10  [INFO   ]  database              1 symptom(s) saved for patient ID: 7
+2026-04-02 11:29:10  [INFO   ]  database              Token saved: 20260402-9826 → General Medicine
+2026-04-02 11:29:10  [INFO   ]  controller.reg        Registration complete. Token: 20260402-9826
+2026-04-02 11:29:11  [INFO   ]  app                   Screen: token
+2026-04-02 11:31:10  [WARNING]  app                   Session timeout reached. Resetting to Welcome.
+2026-04-02 11:31:10  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 11:31:11  [INFO   ]  app                   Screen: welcome
+2026-04-02 11:32:52  [INFO   ]  app                   Screen: patient_info
+2026-04-02 11:34:59  [WARNING]  app                   Session timeout reached. Resetting to Welcome.
+2026-04-02 11:34:59  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 11:34:59  [INFO   ]  app                   Screen: welcome
+2026-04-02 11:35:03  [INFO   ]  database              Database initialised successfully.
+2026-04-02 11:35:03  [INFO   ]  services.admin        Admin Dashboard starting at http://localhost:8080
+2026-04-02 11:35:03  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 11:35:04  [INFO   ]  app                   Application closed.
+2026-04-02 11:35:05  [INFO   ]  app                   Screen: welcome
+2026-04-02 11:37:23  [INFO   ]  services.i18n         Language changed to: தமிழ்
+2026-04-02 11:41:21  [INFO   ]  database              Database initialised successfully.
+2026-04-02 11:41:21  [INFO   ]  services.admin        Admin Dashboard starting at http://localhost:8080
+2026-04-02 11:41:21  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 11:41:23  [INFO   ]  app                   Screen: welcome
+2026-04-02 11:41:32  [INFO   ]  app                   Application closed.
+2026-04-02 11:41:34  [INFO   ]  services.i18n         Language changed to: தமிழ்
+2026-04-02 11:41:41  [INFO   ]  app                   Screen: patient_info
+2026-04-02 11:43:53  [WARNING]  app                   Session timeout reached. Resetting to Welcome.
+2026-04-02 11:43:53  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 11:43:54  [INFO   ]  app                   Screen: welcome
+2026-04-02 11:51:47  [INFO   ]  app                   Application closed.
+2026-04-02 11:51:50  [INFO   ]  database              Database initialised successfully.
+2026-04-02 11:51:50  [INFO   ]  services.admin        Admin Dashboard starting at http://localhost:8080
+2026-04-02 11:51:51  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 11:51:51  [ERROR  ]  services.admin        DB Error (recent): no such column: t.severity
+2026-04-02 11:51:52  [INFO   ]  app                   Screen: welcome
+2026-04-02 11:51:56  [ERROR  ]  services.admin        DB Error (recent): no such column: t.severity
+2026-04-02 11:52:01  [ERROR  ]  services.admin        DB Error (recent): no such column: t.severity
+2026-04-02 11:52:01  [ERROR  ]  services.admin        DB Error (recent): no such column: t.severity
+2026-04-02 11:52:06  [ERROR  ]  services.admin        DB Error (recent): no such column: t.severity
+2026-04-02 11:52:06  [ERROR  ]  services.admin        DB Error (recent): no such column: t.severity
+2026-04-02 11:52:11  [ERROR  ]  services.admin        DB Error (recent): no such column: t.severity
+2026-04-02 11:52:16  [ERROR  ]  services.admin        DB Error (recent): no such column: t.severity
+2026-04-02 11:52:21  [ERROR  ]  services.admin        DB Error (recent): no such column: t.severity
+2026-04-02 11:52:26  [ERROR  ]  services.admin        DB Error (recent): no such column: t.severity
+2026-04-02 11:52:31  [ERROR  ]  services.admin        DB Error (recent): no such column: t.severity
+2026-04-02 11:52:36  [ERROR  ]  services.admin        DB Error (recent): no such column: t.severity
+2026-04-02 11:52:41  [ERROR  ]  services.admin        DB Error (recent): no such column: t.severity
+2026-04-02 11:52:46  [ERROR  ]  services.admin        DB Error (recent): no such column: t.severity
+2026-04-02 11:52:51  [ERROR  ]  services.admin        DB Error (recent): no such column: t.severity
+2026-04-02 11:52:56  [ERROR  ]  services.admin        DB Error (recent): no such column: t.severity
+2026-04-02 11:53:00  [INFO   ]  database              Migration: Added column severity to tokens
+2026-04-02 11:53:00  [INFO   ]  database              Migration: Added column spo2 to health_records
+2026-04-02 11:53:00  [INFO   ]  database              Database initialised and migrated successfully.
+2026-04-02 11:53:00  [INFO   ]  services.admin        Admin Dashboard starting at http://localhost:8080
+2026-04-02 11:53:01  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 11:53:02  [INFO   ]  app                   Screen: welcome
+2026-04-02 11:53:35  [INFO   ]  app                   Screen: patient_info
+2026-04-02 11:54:09  [INFO   ]  app                   Screen: symptoms
+2026-04-02 11:54:18  [INFO   ]  app                   Screen: health
+2026-04-02 11:54:18  [INFO   ]  sensor.temp           MOCK Temperature: 37.1 °C
+2026-04-02 11:54:21  [INFO   ]  sensor.pulse          MOCK Heart Rate: 107 BPM
+2026-04-02 11:54:26  [INFO   ]  sensors.spo2          MOCK SpO2: 94%
+2026-04-02 11:54:26  [INFO   ]  sensor.env            MOCK Environment: {'amb_temp': 26.0, 'humidity': 50.5, 'pressure': 1007.7}
+2026-04-02 11:54:28  [INFO   ]  services.ai           AI Inference: General Medicine (Normal)
+2026-04-02 11:54:30  [INFO   ]  database              Patient saved. ID: 8
+2026-04-02 11:54:30  [INFO   ]  database              Health record saved for patient ID: 8
+2026-04-02 11:54:30  [INFO   ]  database              1 symptom(s) saved for patient ID: 8
+2026-04-02 11:54:30  [INFO   ]  database              Token saved: 20260402-6210 → General Medicine
+2026-04-02 11:54:30  [INFO   ]  controller.reg        Registration complete. Token: 20260402-6210
+2026-04-02 11:54:55  [INFO   ]  app                   Application closed.
+2026-04-02 11:57:51  [WARNING]  app                   Session timeout reached. Resetting to Welcome.
+2026-04-02 11:57:51  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 11:57:51  [INFO   ]  app                   Screen: welcome
+2026-04-02 12:00:48  [INFO   ]  database              Database initialised and migrated successfully.
+2026-04-02 12:00:48  [INFO   ]  services.admin        Admin Dashboard starting at http://localhost:8080
+2026-04-02 12:00:50  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 12:00:52  [INFO   ]  app                   Screen: welcome
+2026-04-02 12:01:07  [INFO   ]  app                   Screen: patient_info
+2026-04-02 12:01:28  [INFO   ]  app                   Screen: symptoms
+2026-04-02 12:01:33  [INFO   ]  app                   Screen: health
+2026-04-02 12:01:34  [INFO   ]  sensor.temp           MOCK Temperature: 36.4 °C
+2026-04-02 12:01:36  [INFO   ]  sensor.pulse          MOCK Heart Rate: 94 BPM
+2026-04-02 12:01:41  [INFO   ]  sensors.spo2          MOCK SpO2: 98%
+2026-04-02 12:01:41  [INFO   ]  sensor.env            MOCK Environment: {'amb_temp': 31.4, 'humidity': 60.6, 'pressure': 1009.6}
+2026-04-02 12:01:42  [INFO   ]  services.ai           AI Inference: Gastroenterology (Normal)
+2026-04-02 12:01:44  [INFO   ]  database              Patient saved. ID: 9
+2026-04-02 12:01:44  [INFO   ]  database              Health record saved for patient ID: 9
+2026-04-02 12:01:44  [INFO   ]  database              1 symptom(s) saved for patient ID: 9
+2026-04-02 12:01:44  [INFO   ]  database              Token saved: 20260402-2108 → Gastroenterology
+2026-04-02 12:01:44  [INFO   ]  controller.reg        Registration complete. Token: 20260402-2108
+2026-04-02 12:03:44  [WARNING]  app                   Session timeout reached. Resetting to Welcome.
+2026-04-02 12:03:44  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 12:03:44  [INFO   ]  app                   Screen: welcome
+2026-04-02 12:07:52  [INFO   ]  app                   Application closed.
+2026-04-02 12:07:54  [INFO   ]  app                   Application closed.
+2026-04-02 12:07:57  [INFO   ]  database              Database initialised and migrated successfully.
+2026-04-02 12:07:57  [INFO   ]  services.admin        Admin Dashboard starting at http://localhost:8080
+2026-04-02 12:07:59  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 12:08:00  [INFO   ]  app                   Screen: welcome
+2026-04-02 12:08:07  [INFO   ]  app                   Screen: patient_info
+2026-04-02 12:09:21  [INFO   ]  app                   Screen: symptoms
+2026-04-02 12:09:40  [INFO   ]  app                   Screen: health
+2026-04-02 12:09:40  [INFO   ]  sensor.temp           MOCK Temperature: 38.2 °C
+2026-04-02 12:09:42  [INFO   ]  sensor.pulse          MOCK Heart Rate: 71 BPM
+2026-04-02 12:09:48  [INFO   ]  sensors.spo2          MOCK SpO2: 95%
+2026-04-02 12:09:48  [INFO   ]  sensor.env            MOCK Environment: {'amb_temp': 24.0, 'humidity': 51.8, 'pressure': 1010.5}
+2026-04-02 12:09:49  [INFO   ]  services.ai           AI Inference: Cardiology (High)
+2026-04-02 12:09:50  [INFO   ]  database              Patient saved. ID: 10
+2026-04-02 12:09:50  [INFO   ]  database              Health record saved for patient ID: 10
+2026-04-02 12:09:50  [INFO   ]  database              1 symptom(s) saved for patient ID: 10
+2026-04-02 12:09:50  [INFO   ]  database              Token saved: 20260402-7502 → Cardiology
+2026-04-02 12:09:50  [INFO   ]  controller.reg        Registration complete. Token: 20260402-7502
+2026-04-02 12:11:50  [WARNING]  app                   Session timeout reached. Resetting to Welcome.
+2026-04-02 12:11:50  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 12:11:50  [INFO   ]  app                   Screen: welcome
+2026-04-02 12:11:55  [INFO   ]  app                   Screen: patient_info
+2026-04-02 12:13:56  [WARNING]  app                   Session timeout reached. Resetting to Welcome.
+2026-04-02 12:13:56  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 12:13:56  [INFO   ]  app                   Screen: welcome
+2026-04-02 17:21:29  [INFO   ]  app                   Application closed.
+2026-04-02 17:21:35  [INFO   ]  database              Migration: Added column allergies to patients
+2026-04-02 17:21:35  [INFO   ]  database              Migration: Added column medical_history to patients
+2026-04-02 17:21:35  [INFO   ]  database              Migration: Added column last_visit_id to patients
+2026-04-02 17:21:35  [INFO   ]  database              Database initialised and migrated successfully.
+2026-04-02 17:21:35  [INFO   ]  services.admin        Admin Dashboard starting at http://localhost:8080
+2026-04-02 17:21:36  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 17:21:39  [INFO   ]  app                   Screen: welcome
+2026-04-02 17:22:05  [INFO   ]  app                   Screen: patient_info
+2026-04-02 17:23:57  [INFO   ]  app                   Application closed.
+2026-04-02 17:24:39  [INFO   ]  database              Database initialised and migrated successfully.
+2026-04-02 17:24:39  [INFO   ]  services.admin        Admin Dashboard starting at http://localhost:8080
+2026-04-02 17:24:41  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 17:24:43  [INFO   ]  app                   Screen: welcome
+2026-04-02 17:24:46  [INFO   ]  app                   Screen: patient_info
+2026-04-02 17:25:07  [INFO   ]  app                   Screen: symptoms
+2026-04-02 17:25:12  [INFO   ]  app                   Screen: health
+2026-04-02 17:25:12  [INFO   ]  sensor.temp           MOCK Temperature: 38.7 °C
+2026-04-02 17:25:14  [INFO   ]  sensor.pulse          MOCK Heart Rate: 64 BPM
+2026-04-02 17:25:19  [INFO   ]  sensors.spo2          MOCK SpO2: 96%
+2026-04-02 17:25:19  [INFO   ]  sensor.env            MOCK Environment: {'amb_temp': 24.4, 'humidity': 69.0, 'pressure': 1007.1}
+2026-04-02 17:25:20  [INFO   ]  services.ai           AI Inference: Neurology (Normal)
+2026-04-02 17:25:22  [INFO   ]  database              Patient saved. ID: 11
+2026-04-02 17:25:22  [INFO   ]  database              Health record saved for patient ID: 11
+2026-04-02 17:25:22  [INFO   ]  database              1 symptom(s) saved for patient ID: 11
+2026-04-02 17:25:22  [INFO   ]  database              Token saved: 20260402-7410 → Neurology
+2026-04-02 17:25:22  [INFO   ]  controller.reg        Registration complete. Token: 20260402-7410
+2026-04-02 17:27:22  [WARNING]  app                   Session timeout reached. Resetting to Welcome.
+2026-04-02 17:27:22  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 17:27:23  [INFO   ]  app                   Screen: welcome
+2026-04-02 17:29:09  [INFO   ]  app                   Screen: patient_info
+2026-04-02 17:29:25  [INFO   ]  app                   Screen: symptoms
+2026-04-02 17:29:30  [INFO   ]  app                   Screen: health
+2026-04-02 17:29:30  [INFO   ]  sensor.temp           MOCK Temperature: 37.7 °C
+2026-04-02 17:29:32  [INFO   ]  sensor.pulse          MOCK Heart Rate: 69 BPM
+2026-04-02 17:29:37  [INFO   ]  sensors.spo2          MOCK SpO2: 97%
+2026-04-02 17:29:37  [INFO   ]  sensor.env            MOCK Environment: {'amb_temp': 28.5, 'humidity': 68.3, 'pressure': 1011.3}
+2026-04-02 17:29:38  [INFO   ]  services.ai           AI Inference: Gastroenterology (Normal)
+2026-04-02 17:29:39  [INFO   ]  database              Patient saved. ID: 12
+2026-04-02 17:29:39  [INFO   ]  database              Health record saved for patient ID: 12
+2026-04-02 17:29:39  [INFO   ]  database              1 symptom(s) saved for patient ID: 12
+2026-04-02 17:29:39  [INFO   ]  database              Token saved: 20260402-3583 → Gastroenterology
+2026-04-02 17:29:39  [INFO   ]  controller.reg        Registration complete. Token: 20260402-3583
+2026-04-02 17:31:36  [INFO   ]  app                   Application closed.
+2026-04-02 17:31:36  [INFO   ]  database              Database initialised and migrated successfully.
+2026-04-02 17:31:37  [INFO   ]  services.admin        Admin Dashboard starting at http://localhost:8080
+2026-04-02 17:31:38  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 17:31:42  [INFO   ]  app                   Screen: welcome
+2026-04-02 17:33:21  [INFO   ]  app                   Screen: emergency
+2026-04-02 17:33:55  [INFO   ]  app                   Screen: symptoms
+2026-04-02 17:34:02  [INFO   ]  app                   Screen: health
+2026-04-02 17:34:02  [INFO   ]  sensor.temp           MOCK Temperature: 36.1 °C
+2026-04-02 17:34:05  [INFO   ]  sensor.pulse          MOCK Heart Rate: 76 BPM
+2026-04-02 17:34:09  [INFO   ]  sensors.spo2          MOCK SpO2: 99%
+2026-04-02 17:34:09  [INFO   ]  sensor.env            MOCK Environment: {'amb_temp': 29.3, 'humidity': 60.2, 'pressure': 1010.4}
+2026-04-02 17:34:12  [INFO   ]  services.ai           AI Inference: Cardiology (High)
+2026-04-02 17:34:13  [INFO   ]  database              Patient saved. ID: 13
+2026-04-02 17:34:13  [INFO   ]  database              Health record saved for patient ID: 13
+2026-04-02 17:34:13  [INFO   ]  database              1 symptom(s) saved for patient ID: 13
+2026-04-02 17:34:13  [INFO   ]  database              Token saved: 20260402-3929 → Cardiology
+2026-04-02 17:34:13  [INFO   ]  controller.reg        Registration complete. Token: 20260402-3929
+2026-04-02 17:36:13  [WARNING]  app                   Session timeout reached. Resetting to Welcome.
+2026-04-02 17:36:13  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 17:36:14  [INFO   ]  app                   Screen: welcome
+2026-04-02 17:53:49  [INFO   ]  database              Database initialised and migrated successfully.
+2026-04-02 17:53:49  [INFO   ]  services.admin        Admin Dashboard starting at http://localhost:8080
+2026-04-02 17:53:50  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 17:53:51  [INFO   ]  app                   Screen: welcome
+2026-04-02 17:59:27  [INFO   ]  app                   Screen: patient_info
+2026-04-02 17:59:40  [INFO   ]  app                   Screen: symptoms
+2026-04-02 17:59:56  [INFO   ]  app                   Screen: health
+2026-04-02 17:59:56  [INFO   ]  sensor.temp           MOCK Temperature: 37.0 °C
+2026-04-02 17:59:58  [INFO   ]  sensor.pulse          MOCK Heart Rate: 85 BPM
+2026-04-02 18:00:04  [INFO   ]  sensors.spo2          MOCK SpO2: 98%
+2026-04-02 18:00:04  [INFO   ]  sensor.env            MOCK Environment: {'amb_temp': 24.8, 'humidity': 73.2, 'pressure': 1011.6}
+2026-04-02 18:00:05  [INFO   ]  services.ai           AI Inference: Orthopaedics (Normal)
+2026-04-02 18:00:07  [INFO   ]  database              Patient saved. ID: 14
+2026-04-02 18:00:07  [INFO   ]  database              Health record saved for patient ID: 14
+2026-04-02 18:00:07  [INFO   ]  database              1 symptom(s) saved for patient ID: 14
+2026-04-02 18:00:07  [INFO   ]  database              Token saved: 20260402-9046 → Orthopaedics
+2026-04-02 18:00:07  [INFO   ]  controller.reg        Registration complete. Token: 20260402-9046
+2026-04-02 18:00:07  [INFO   ]  token_screen          TokenScreen: Displaying token 20260402-9046
+2026-04-02 18:00:08  [ERROR  ]  token_screen          QR Display Error: CTkImage: light_image must be instance if PIL.Image.Image, not <class 'qrcode.image.pil.PilImage'>
+2026-04-02 18:00:09  [INFO   ]  app                   Screen: token
+2026-04-02 18:02:07  [WARNING]  app                   Session timeout reached. Resetting to Welcome.
+2026-04-02 18:02:07  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 18:02:07  [INFO   ]  app                   Screen: welcome
+2026-04-02 18:05:00  [INFO   ]  app                   Screen: patient_info
+2026-04-02 18:05:26  [INFO   ]  app                   Screen: symptoms
+2026-04-02 18:05:32  [INFO   ]  app                   Screen: health
+2026-04-02 18:05:32  [INFO   ]  sensor.temp           MOCK Temperature: 38.2 °C
+2026-04-02 18:05:34  [INFO   ]  sensor.pulse          MOCK Heart Rate: 74 BPM
+2026-04-02 18:05:39  [INFO   ]  sensors.spo2          MOCK SpO2: 94%
+2026-04-02 18:05:39  [INFO   ]  sensor.env            MOCK Environment: {'amb_temp': 29.0, 'humidity': 54.5, 'pressure': 1006.2}
+2026-04-02 18:05:41  [INFO   ]  services.ai           AI Inference: ENT (Normal)
+2026-04-02 18:05:43  [INFO   ]  database              Patient saved. ID: 15
+2026-04-02 18:05:43  [INFO   ]  database              Health record saved for patient ID: 15
+2026-04-02 18:05:43  [INFO   ]  database              2 symptom(s) saved for patient ID: 15
+2026-04-02 18:05:43  [INFO   ]  database              Token saved: 20260402-5435 → ENT
+2026-04-02 18:05:43  [INFO   ]  controller.reg        Registration complete. Token: 20260402-5435
+2026-04-02 18:05:43  [INFO   ]  token_screen          TokenScreen: Displaying token 20260402-5435
+2026-04-02 18:05:43  [ERROR  ]  token_screen          QR Display Error: CTkImage: light_image must be instance if PIL.Image.Image, not <class 'qrcode.image.pil.PilImage'>
+2026-04-02 18:05:43  [INFO   ]  app                   Screen: token
+2026-04-02 18:07:43  [WARNING]  app                   Session timeout reached. Resetting to Welcome.
+2026-04-02 18:07:43  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 18:07:43  [INFO   ]  app                   Screen: welcome
+2026-04-02 18:08:47  [INFO   ]  services.i18n         Language changed to: हिन्दी
+2026-04-02 18:08:49  [INFO   ]  services.i18n         Language changed to: தமிழ்
+2026-04-02 18:10:20  [INFO   ]  services.admin        Kiosk status changed: OFFLINE
+2026-04-02 18:10:25  [INFO   ]  services.admin        Kiosk status changed: ONLINE
+2026-04-02 18:10:25  [INFO   ]  services.admin        Kiosk status changed: ONLINE
+2026-04-02 18:10:25  [INFO   ]  services.admin        Kiosk status changed: ONLINE
+2026-04-02 18:13:47  [INFO   ]  app                   Screen: patient_info
+2026-04-02 18:14:02  [INFO   ]  app                   Screen: symptoms
+2026-04-02 18:14:05  [INFO   ]  app                   Screen: health
+2026-04-02 18:14:05  [INFO   ]  sensor.temp           MOCK Temperature: 37.7 °C
+2026-04-02 18:14:07  [INFO   ]  sensor.pulse          MOCK Heart Rate: 65 BPM
+2026-04-02 18:14:12  [INFO   ]  sensors.spo2          MOCK SpO2: 98%
+2026-04-02 18:14:12  [INFO   ]  sensor.env            MOCK Environment: {'amb_temp': 26.9, 'humidity': 72.3, 'pressure': 1006.1}
+2026-04-02 18:14:13  [INFO   ]  services.ai           AI Inference: Cardiology (High)
+2026-04-02 18:14:15  [INFO   ]  database              Patient saved. ID: 16
+2026-04-02 18:14:15  [INFO   ]  database              Health record saved for patient ID: 16
+2026-04-02 18:14:15  [INFO   ]  database              1 symptom(s) saved for patient ID: 16
+2026-04-02 18:14:15  [INFO   ]  database              Token saved: 20260402-4590 → Cardiology
+2026-04-02 18:14:15  [INFO   ]  controller.reg        Registration complete. Token: 20260402-4590
+2026-04-02 18:14:15  [INFO   ]  token_screen          TokenScreen: Displaying token 20260402-4590
+2026-04-02 18:14:15  [ERROR  ]  token_screen          QR Display Error: CTkImage: light_image must be instance if PIL.Image.Image, not <class 'qrcode.image.pil.PilImage'>
+2026-04-02 18:14:15  [INFO   ]  app                   Screen: token
+2026-04-02 18:16:14  [WARNING]  app                   Session timeout reached. Resetting to Welcome.
+2026-04-02 18:16:14  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 18:16:15  [INFO   ]  app                   Screen: welcome
+2026-04-02 18:16:34  [INFO   ]  app                   Screen: emergency
+2026-04-02 18:16:42  [INFO   ]  app                   Screen: symptoms
+2026-04-02 18:16:44  [INFO   ]  app                   Screen: health
+2026-04-02 18:16:44  [INFO   ]  sensor.temp           MOCK Temperature: 36.3 °C
+2026-04-02 18:16:47  [INFO   ]  sensor.pulse          MOCK Heart Rate: 100 BPM
+2026-04-02 18:16:52  [INFO   ]  sensors.spo2          MOCK SpO2: 94%
+2026-04-02 18:16:52  [INFO   ]  sensor.env            MOCK Environment: {'amb_temp': 29.8, 'humidity': 48.1, 'pressure': 1013.4}
+2026-04-02 18:16:53  [INFO   ]  services.ai           AI Inference: Orthopaedics (Normal)
+2026-04-02 18:16:55  [INFO   ]  database              Patient saved. ID: 17
+2026-04-02 18:16:55  [INFO   ]  database              Health record saved for patient ID: 17
+2026-04-02 18:16:55  [INFO   ]  database              1 symptom(s) saved for patient ID: 17
+2026-04-02 18:16:55  [INFO   ]  database              Token saved: 20260402-1893 → Orthopaedics
+2026-04-02 18:16:55  [INFO   ]  controller.reg        Registration complete. Token: 20260402-1893
+2026-04-02 18:16:55  [INFO   ]  token_screen          TokenScreen: Displaying token 20260402-1893
+2026-04-02 18:16:55  [ERROR  ]  token_screen          QR Display Error: CTkImage: light_image must be instance if PIL.Image.Image, not <class 'qrcode.image.pil.PilImage'>
+2026-04-02 18:16:55  [INFO   ]  app                   Screen: token
+2026-04-02 18:18:55  [WARNING]  app                   Session timeout reached. Resetting to Welcome.
+2026-04-02 18:18:55  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 18:18:55  [INFO   ]  app                   Screen: welcome
+2026-04-02 19:15:43  [INFO   ]  services.i18n         Language changed to: English
+2026-04-02 19:24:04  [INFO   ]  app                   Screen: aadhaar
+2026-04-02 19:24:12  [INFO   ]  auth                  ========================================
+2026-04-02 19:24:12  [INFO   ]  auth                    [MOCK OTP]  Your OTP is: 498857
+2026-04-02 19:24:12  [INFO   ]  auth                  ========================================
+2026-04-02 19:24:12  [INFO   ]  controller.auth       OTP sent for Aadhaar ending 2469
+2026-04-02 19:26:00  [INFO   ]  auth                  ========================================
+2026-04-02 19:26:00  [INFO   ]  auth                    [MOCK OTP]  Your OTP is: 199479
+2026-04-02 19:26:00  [INFO   ]  auth                  ========================================
+2026-04-02 19:26:00  [INFO   ]  controller.auth       OTP sent for Aadhaar ending 5265
+2026-04-02 19:28:12  [WARNING]  app                   Session timeout reached. Resetting to Welcome.
+2026-04-02 19:28:12  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 19:28:12  [INFO   ]  app                   Screen: welcome
+2026-04-02 20:55:58  [INFO   ]  database              Database initialised and migrated successfully.
+2026-04-02 20:56:42  [INFO   ]  services.admin        Admin Dashboard starting at http://localhost:8080
+2026-04-02 20:57:11  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 20:57:27  [INFO   ]  database              Database initialised and migrated successfully.
+2026-04-02 20:57:32  [INFO   ]  app                   Screen: welcome
+2026-04-02 20:57:48  [INFO   ]  services.admin        Admin Dashboard starting at http://localhost:8080
+2026-04-02 20:57:55  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 20:58:02  [INFO   ]  app                   Screen: welcome
+2026-04-02 20:58:14  [INFO   ]  app                   Screen: patient_info
+2026-04-02 20:58:50  [INFO   ]  app                   Screen: symptoms
+2026-04-02 21:00:51  [WARNING]  app                   Session timeout reached. Resetting to Welcome.
+2026-04-02 21:00:51  [INFO   ]  controller.reg        New registration session started.
+2026-04-02 21:00:52  [INFO   ]  app                   Screen: welcome
+2026-04-02 21:01:40  [INFO   ]  app                   Application closed.

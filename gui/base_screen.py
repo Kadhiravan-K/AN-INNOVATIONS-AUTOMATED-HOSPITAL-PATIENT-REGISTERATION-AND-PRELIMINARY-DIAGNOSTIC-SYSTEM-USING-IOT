@@ -12,6 +12,7 @@ from config import (
     HOSPITAL_NAME, HOSPITAL_CITY,
     WINDOW_WIDTH, WINDOW_HEIGHT,
 )
+from services.i18n import i18n
 
 
 class BaseScreen:
@@ -24,9 +25,13 @@ class BaseScreen:
         self.root = app.root
 
     def clear(self):
-        """Remove all widgets from the root window."""
+        """Remove all widgets and cleanup."""
         for widget in self.root.winfo_children():
             widget.destroy()
+
+    def translate(self, key, default=None):
+        """Helper to get translated text."""
+        return i18n.get(key, default)
 
     def make_header(self, title):
         """Create a modern solid header with hospital name and screen title."""
@@ -86,7 +91,7 @@ class BaseScreen:
 
         return footer
 
-    def make_button(self, parent, text, command, color=None, width=150, height=40, font=None):
+    def make_button(self, parent, text, command, color=None, width=150, height=40, font=None, textvariable=None):
         """Create a styled CTkButton with rounded corners and hover effects."""
         bg_color = color or COLOR_ACCENT
         btn = ctk.CTkButton(
@@ -100,7 +105,8 @@ class BaseScreen:
             width=width,
             height=height,
             corner_radius=8,
-            cursor="hand2"
+            cursor="hand2",
+            textvariable=textvariable
         )
         return btn
 
@@ -111,11 +117,10 @@ class BaseScreen:
         card = ctk.CTkFrame(
             master=parent,
             fg_color=bg,
-            corner_radius=12,
-            border_width=1,
+            corner_radius=20,  # Increased for modern look
+            border_width=2,
             border_color=COLOR_BORDER
         )
-        # Callers will pack/grid this themselves, so we just return it
         return card, card
 
     def make_status_label(self, parent, text=""):
