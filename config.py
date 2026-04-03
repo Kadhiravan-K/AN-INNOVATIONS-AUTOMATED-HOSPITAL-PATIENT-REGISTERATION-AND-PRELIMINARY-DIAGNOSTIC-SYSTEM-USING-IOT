@@ -1,9 +1,6 @@
 # ─────────────────────────────────────────────────────────────────
 # config.py
 # Project  : Automated Hospital Patient Registration System
-# College  : Hindusthan College of Engineering and Technology
-# Dept     : Electrical and Electronics Engineering
-# Guide    : Dr. R. Rajeshkanna
 # ─────────────────────────────────────────────────────────────────
 
 # ── MOCK MODE ────────────────────────────────────────────────────
@@ -49,8 +46,8 @@ HR_LOW        = 50     # BPM – bradycardia threshold
 HR_HIGH       = 120    # BPM – tachycardia threshold
 
 # ── HOSPITAL INFO (shown on token) ───────────────────────────────
-HOSPITAL_NAME = "Hindusthan College of Engineering and Technology"
-HOSPITAL_CITY = "Coimbatore – 641 032"
+HOSPITAL_NAME = "General Hospital"
+HOSPITAL_CITY = "City Center"
 
 # ── DEPARTMENT SYMPTOM MAPPING ───────────────────────────────────
 SYMPTOM_DEPT_MAP = {

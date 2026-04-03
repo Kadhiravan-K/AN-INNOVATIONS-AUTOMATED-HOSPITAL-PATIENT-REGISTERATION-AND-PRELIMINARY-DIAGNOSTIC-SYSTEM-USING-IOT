@@ -1,0 +1,4 @@
+# controllers package
+from controllers.registration_controller import RegistrationController
+from controllers.sensor_controller import SensorController
+from controllers.auth_controller import AuthController
