@@ -1,7 +1,4 @@
 # Automated Hospital Patient Registration System
-
-
-
 ---
 
 ## 📁 Project Structure
