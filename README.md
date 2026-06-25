@@ -4,15 +4,14 @@
 
 **Department:** Electrical and Electronics Engineering  
 **Guide:** Dr. R. Rajeshkanna  
-**Team:*AHPRS*
+**Team:** AHPRS
 
 - AKASH KUMAR C M (720722105003)
 - JAYAPRASANTH S (720722105017)
 - KADHIRAVAN K (720722105025)
 - SANJAI S (720722105067)
 
-!note : do not use Report.pdf codings.
----
+## !note : do not use Report.pdf codings.
 
 ## 📁 Project Structure
 
